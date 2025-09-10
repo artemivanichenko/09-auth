@@ -1,4 +1,3 @@
-import { fetchNotes } from "@/lib/api";
 import {
 	HydrationBoundary,
 	QueryClient,
@@ -7,6 +6,7 @@ import {
 import React from "react";
 import NotesClient from "./Notes.client";
 import { Metadata } from "next";
+import { fetchNotes } from "@/lib/api/serverApi";
 
 export const generateMetadata = async ({
 	params,

@@ -1,4 +1,3 @@
-import { fetchNoteById } from "@/lib/api";
 import {
 	HydrationBoundary,
 	QueryClient,
@@ -7,6 +6,7 @@ import {
 import React from "react";
 import NoteDetailsClient from "./NoteDetails.client";
 import { Metadata } from "next";
+import { fetchNoteById } from "@/lib/api/serverApi";
 
 interface NotesDetailsProps {
 	params: Promise<{ id: string }>;
